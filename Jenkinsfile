@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+    label node1
+    }
 
     tools {
         maven 'maven' // This must match the name in Global Tool Configuration
