@@ -2,11 +2,6 @@ pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/your-repo/sample-java-project.git'
-            }
-        }
         
         stage('Build') {
             steps {
